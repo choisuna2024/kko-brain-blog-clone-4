@@ -31,13 +31,13 @@ window.addEventListener("load", () => {
       iconMore.classList.add("active"); // 아이콘 x로 교체
       isClick = true;
     }
-    window.addEventListener("resize"),
-      () => {
-        if (innerWidth > 1024) {
-          mbMenu.classList.remove("active");
-          mbInner.classList.remove("active");
-          iconMore.classList.remove("active");
-        }
-      };
+
+    window.addEventListener("resize", () => {
+      if (innerWidth > 1024) {
+        mbMenu.classList.remove("active");
+        mbInner.classList.remove("active");
+        iconMore.classList.remove("active");
+      }
+    });
   });
 });
